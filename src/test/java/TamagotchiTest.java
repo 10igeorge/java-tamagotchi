@@ -25,7 +25,13 @@ public class TamagotchiTest {
     Tamagotchi myPet = new Tamagotchi("SweetRaveParty");
     myPet.play();
     assertEquals(4, myPet.getHappinessLevel());
-    assertEquals(0, myPet.getSleepLevel());
     assertEquals(1, myPet.getFoodLevel());
+  }
+
+  @Test
+  public void tamagotchi_hasFullSleepLevelsAfterSleepMethod() {
+    Tamagotchi myPet = new Tamagotchi("Meeple");
+    myPet.sleep();
+    assertEquals(10, myPet.getSleepLevel());
   }
 }

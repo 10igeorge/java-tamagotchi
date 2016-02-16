@@ -1,7 +1,7 @@
 public class Tamagotchi {
-  public int final MAX_SLEEP = 10;
-  public int final MAX_HUNGER = 10;
-  public int final MAX_HAPPY = 10;
+  public static final int MAX_SLEEP = 10;
+  public static final int MAX_HUNGER = 10;
+  public static final int MAX_HAPPY = 10;
   private String mName;
   private int mFoodLevel = 2;
   private int mSleepLevel = 2;
@@ -38,7 +38,7 @@ public class Tamagotchi {
   public void play() {
     mFoodLevel--;
     mHappinessLevel+=2;
-    mSleepLevel-=2;
+    mSleepLevel--;
   }
 
   public void sleep(){
