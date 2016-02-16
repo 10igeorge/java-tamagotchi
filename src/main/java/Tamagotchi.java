@@ -1,31 +1,45 @@
 public class Tamagotchi {
-  String mName;
-  int mFoodLevel;
-  int mSleepLevel;
-  int mHappinessLevel;
+  private String mName;
+  private int mFoodLevel = 2;
+  private int mSleepLevel = 2;
+  private int mHappinessLevel = 2;
 
-  public getName(String name){
+  public Tamagotchi(String name){
+    mName = name;
+  }
+
+  public String getName(){
     return mName;
   }
 
-  public getFoodLevel(int foodLevel){
+  public int getFoodLevel(){
     return mFoodLevel;
   }
 
-  public getSleepLevel(int sleepLevel){
+  public int getSleepLevel(){
     return mSleepLevel;
   }
 
-  public getHappinessLevel(int happinessLevel){
+  public int getHappinessLevel(){
     return mHappinessLevel;
   }
 
-  public feed(){
-    mFoodLevel ++;
-  }
+  // public int setFoodLevel(int foodLevel){
+  //   foodLevel = mFoodLevel;
+  //   return foodLevel;
+  // }
 
-  public play(){
-    mHappinessLevel ++;
-    mSleepLevel --;
-  }
+
+
+  //
+
+
+  // public feed(){
+  //   mFoodLevel ++;
+  // }
+  //
+  // public play(){
+  //   mHappinessLevel ++;
+  //   mSleepLevel --;
+  // }
 }

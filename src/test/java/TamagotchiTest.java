@@ -1,7 +1,7 @@
 import org.junit.*;
 import static org.junit.Assert.*;
 
-public class TriangleTest {
+public class TamagotchiTest {
 
   @Test
   public void tamagotchi_instantiatesCorrectly() {
@@ -9,6 +9,6 @@ public class TriangleTest {
     assertEquals("Frederick", myPet.getName());
     assertEquals(2, myPet.getFoodLevel());
     assertEquals(2, myPet.getSleepLevel());
-    assertEquals(2, myPet.getActivityLevel());
+    assertEquals(2, myPet.getHappinessLevel());
   }
 }
