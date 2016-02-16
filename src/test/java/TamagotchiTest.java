@@ -16,7 +16,16 @@ public class TamagotchiTest {
   public void tamagotchi_hungerAndHappinessGoesUpIfFed(){
     Tamagotchi myPet = new Tamagotchi("Frederick");
     myPet.feed();
-    assertEquals(3, myPet.getFoodLevel());
+    assertEquals(4, myPet.getFoodLevel());
     assertEquals(3, myPet.getHappinessLevel());
+  }
+
+  @Test
+  public void tamagotchi_getsHappyAfterPlaying() {
+    Tamagotchi myPet = new Tamagotchi("SweetRaveParty");
+    myPet.play();
+    assertEquals(4, myPet.getHappinessLevel());
+    assertEquals(0, myPet.getSleepLevel());
+    assertEquals(1, myPet.getFoodLevel());
   }
 }
