@@ -8,23 +8,23 @@ public class TamagotchiTest {
     Tamagotchi myPet = new Tamagotchi("Frederick");
     assertEquals("Frederick", myPet.getName());
     assertEquals(2, myPet.getFoodLevel());
-    assertEquals(2, myPet.getSleepLevel());
-    assertEquals(2, myPet.getHappinessLevel());
+    assertEquals(5, myPet.getSleepLevel());
+    assertEquals(5, myPet.getHappinessLevel());
   }
 
   @Test
   public void tamagotchi_hungerAndHappinessGoesUpIfFed(){
     Tamagotchi myPet = new Tamagotchi("Frederick");
     myPet.feed();
-    assertEquals(4, myPet.getFoodLevel());
-    assertEquals(3, myPet.getHappinessLevel());
+    assertEquals(5, myPet.getFoodLevel());
+    assertEquals(6, myPet.getHappinessLevel());
   }
 
   @Test
   public void tamagotchi_getsHappyAfterPlaying() {
     Tamagotchi myPet = new Tamagotchi("SweetRaveParty");
     myPet.play();
-    assertEquals(4, myPet.getHappinessLevel());
+    assertEquals(7, myPet.getHappinessLevel());
     assertEquals(1, myPet.getFoodLevel());
   }
 
@@ -39,5 +39,11 @@ public class TamagotchiTest {
   public void tamagotchi_isAliveIfFoodLevelIsGreaterThan0() {
     Tamagotchi myPet = new Tamagotchi("Meeple");
     assertEquals(true, myPet.isAlive());
+  }
+
+  @Test
+  public void tamagotchi_returnsStatusBasedOnLevels() {
+    Tamagotchi myPet = new Tamagotchi("Meeple");
+    assertEquals("Your pet is hungry", myPet.petStatus());
   }
 }
