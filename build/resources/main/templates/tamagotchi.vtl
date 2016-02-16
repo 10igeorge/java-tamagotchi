@@ -1,0 +1,19 @@
+<!-- <h1>Task list!</h1>
+<ul>
+#foreach ($task in $tasks)
+  <li>$task.getDescription()</li>
+#end
+</ul>
+<hr> -->
+<h1>Tamagotchi Simulator</h1>
+<br>
+<p>I'm $namePet! I love you! I'm trusting you to take good care of me!</p>
+<img src="/mimitchi.jpg"><br>
+<form action="/tasks" method="post">
+  <label for="description">What would you like to do with your Tamagotchi?</label>
+
+  <br><br>
+  <button type="submit" class="btn btn-default">Feed me</button>
+  <button type="submit" class="btn btn-default">Go to Sleep</button>
+  <button type="submit" class="btn btn-default">Play</button>
+</form>

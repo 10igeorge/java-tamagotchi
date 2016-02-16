@@ -1,0 +1,28 @@
+/*.egg {
+  height: 303px;
+  background-image: url(egg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  line-height:
+}*/
+body {
+  text-align: center;
+}
+
+.row {
+  text-align: center;
+}
+
+.row button {
+  margin-top: -300px;
+}
+
+button {
+  background-color: #FFA8BB;
+}
+
+button:hover {
+  background-color: #F1C6D0;
+  box-shadow: 0 0 2px #DD7087;
+  color: #fff;
+}
