@@ -4,6 +4,8 @@ public class Tamagotchi {
   private int mSleepLevel = 2;
   private int mHappinessLevel = 2;
 
+//New Tamagotchi specs
+
   public Tamagotchi(String name){
     mName = name;
   }
@@ -24,14 +26,23 @@ public class Tamagotchi {
     return mHappinessLevel;
   }
 
+  public void feed() {
+    mFoodLevel+2;
+    mHappinessLevel++;
+    mSleepLevel--;
+  }
+
+  public void play() {
+    mFoodLevel--;
+    mHappinessLevel+2;
+    mSleepLevel-2;
+  }
+
+
   // public int setFoodLevel(int foodLevel){
   //   foodLevel = mFoodLevel;
   //   return foodLevel;
   // }
-
-
-
-  //
 
 
   // public feed(){
