@@ -46,19 +46,13 @@ public class Tamagotchi {
     mSleepLevel = MAX_SLEEP;
   }
 
+ public boolean isAlive(){
+   if (mFoodLevel > 0){
+     return true;
+   } else {
+     return false;
+   }
+ }
 
-  // public int setFoodLevel(int foodLevel){
-  //   foodLevel = mFoodLevel;
-  //   return foodLevel;
-  // }
 
-
-  // public feed(){
-  //   mFoodLevel ++;
-  // }
-  //
-  // public play(){
-  //   mHappinessLevel ++;
-  //   mSleepLevel --;
-  // }
 }

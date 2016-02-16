@@ -34,4 +34,10 @@ public class TamagotchiTest {
     myPet.sleep();
     assertEquals(10, myPet.getSleepLevel());
   }
+
+  @Test
+  public void tamagotchi_isAliveIfFoodLevelIsGreaterThan0() {
+    Tamagotchi myPet = new Tamagotchi("Meeple");
+    assertEquals(true, myPet.isAlive());
+  }
 }
