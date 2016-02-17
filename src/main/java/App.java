@@ -23,10 +23,32 @@ public class App {
       model.put("template", "templates/tamagotchi.vtl");
       Tamagotchi myPet = request.session().attribute("myPet");
       String namePet = request.queryParams("namePet");
+
+      if (namePet == null){
+        namePet = myPet.getName();
+      }
+
+      request.session().attribute("namePet", namePet);
       if (myPet == null){
         myPet = new Tamagotchi(namePet);
         request.session().attribute("myPet", myPet);
       }
+
+      String action = (String) request.queryParams("action");
+      System.out.println("action" + action);
+      if (action != null){
+        if (action.equals("feed")){
+          myPet.feed();
+        } else if (action == "sleep"){
+          myPet.sleep();
+        } else if (action == "play"){
+          myPet.play();
+        }
+        else {
+          System.out.println("broken");
+        }
+      }
+
 
       String petStatus = myPet.petStatus();
 
