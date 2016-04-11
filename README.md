@@ -1,28 +1,17 @@
-# Word Puzzle
+# java-tamagotchi
 
-#### Short Description
+## Created By
+Isabelle George & Kevin Mattison
 
-#### By Name
+#### Description
+Java web app for a tamagotchi clone (more complete version in game website)
 
-## Description
+#### Setup/Installation Requirements
 
-## Installation Instructions
+* `git clone https://https://github.com/10igeorge/java-tamagotchi`
+* `gradle run`
+* open browser to http://localhost:4567/
 
-## Known Bugs
+##### License
 
-
-## Technologies Used
-
-* Java
-* HTML
-* Gradle
-* Spark
-* junit
-* Velocity
-* Fluentlenium
-
-### License
-
-Licensed under the GPL.
-
-Copyright (c) 2016 **Name**
+Copyright (c) 2016 Isabelle George & Kevin Mattison
